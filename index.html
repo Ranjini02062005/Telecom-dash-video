@@ -1,10 +1,62 @@
-<source src="Demo_telecom (1).mp4" type="video/mp4" />
-```
-Replace `demo.mp4` with your actual video filename.
-
-**2. Upload `index.html` to your repo** — Go to `https://github.com/ranjini02062005/Telecom-dash-video` → click **Add file → Upload files** → upload this `index.html`.
-
-**3. Make sure both files are in the same folder** — Your repo should have:
-```
-index.html        ← the file above
-your-video.mp4    ← your video file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telecom Dashboard Demo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0f1117;
+      color: #e2e8f0;
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 900px; width: 100%; }
+    h1 { font-size: 2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 0.5rem; }
+    .subtitle { font-size: 1rem; color: #94a3b8; margin-bottom: 2rem; line-height: 1.6; }
+    .video-wrapper {
+      width: 100%;
+      background: #1e293b;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #334155;
+    }
+    video { width: 100%; display: block; background: #000; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.5rem; }
+    .tag {
+      background: #1e293b; color: #94a3b8;
+      font-size: 12px; padding: 4px 10px;
+      border-radius: 6px; border: 1px solid #334155;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Telecom Analytics Dashboard</h1>
+    <p class="subtitle">
+      A full-stack MERN application with drag-and-drop dashboard builder,
+      7 widget types, real-time order management, and MongoDB persistence.
+    </p>
+    <div class="video-wrapper">
+      <video controls autoplay muted loop playsinline>
+        <source src="Demo_telecom (1).mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="tags">
+      <span class="tag">MongoDB</span>
+      <span class="tag">Express.js</span>
+      <span class="tag">React</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">Drag &amp; Drop</span>
+      <span class="tag">7 Widget Types</span>
+    </div>
+  </div>
+</body>
+</html>
